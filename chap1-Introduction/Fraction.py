@@ -26,3 +26,30 @@ class Fraction:
         second_num = self.den * other.num
 
         return first_num == second_num
+
+    def __gt__(self, other):
+        first_num = self.num * other.den
+        second_num = self.den * other.num
+        return first_num > second_num
+
+    def __lt__(self, other):
+        first_num = self.num * other.den
+        second_num = self.den * other.num
+        return first_num < second_num
+
+    def __mul__(self, other):
+        num = self.num * other.num
+        den = self.den * other.den
+        return Fraction(num, den)
+
+    def __truediv__(self, other):
+        num = self.num * other.den
+        den = self.den * other.num
+        common = gcd(num, den)
+        return Fraction(num // common, den // common)
+
+    def __sub__(self, other):
+        num = (self.num * other.den) - (self.den * other.num)
+        den = self.den * other.den
+        common = gcd(num, den)
+        return Fraction(num // common, den // common)

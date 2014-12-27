@@ -62,6 +62,10 @@ def main():
     ans = testFractionLessThan(x, y)
     print ("Is {} less than {}: {}".format(x, y, ans))
 
+    # #1 testing solution for programming exercise 1 from 1.7 module of chap1
+    print ("Numerator of first fraction: {}".format(x.get_num()))
+    print ("Denominator of first fraction: {}".format(x.get_den()))
+
 
 if __name__ == '__main__':
     main()

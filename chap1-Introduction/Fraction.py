@@ -15,6 +15,14 @@ class Fraction:
     def show(self):
         print (self.num, "/", self.den)
 
+    # #1 solution for programming exercise 1 from 1.7 modude of chap1
+    def get_num(self):
+        return self.num
+
+    # #1 solution for programming exercise 1 from 1.7 modude of chap1
+    def get_den(self):
+        return self.den
+
     def __add__(self, other):
         new_num = (self.num * other.den) + (self.den * other.num)
         new_den = self.den * other.den

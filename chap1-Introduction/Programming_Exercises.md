@@ -1,8 +1,9 @@
 1.7 Programming Exercises
 =================================================================================
 
-### 1. Implement the simple methods get_num and get_den that will return the numerator
-and denominator of a fraction.
+### 1. Implement the simple methods get_num and get_den that will return the numerator and denominator of a fraction.
+- Please refer the to the #1 comment in Fraction.py file (same directory) for solution to this problem. 
+- Test code is added in the FractionClient.py with #1 comment.
 
 2. In many ways it would be better if all fractions were maintained in lowest terms right
 from the start. Modify the constructor for the Fraction class so that GCD is used to

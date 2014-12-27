@@ -7,6 +7,13 @@ class Fraction:
 
     # #2 solution for exercise 2 from 1.7 module chap-1
     def __init__(self, top, bottom):
+        # #5 testing solution for exercise 5 from 1.7 module - chap-1
+        if not isinstance(top, int):
+            valErr = ValueError("{} is not integer".format(top))
+            raise valErr
+        if not isinstance(bottom, int):
+            valErr = ValueError("{} is not integer".format(bottom))
+            raise valErr
         common = gcd(top, bottom)
         self.num = top // common
         self.den = bottom // common

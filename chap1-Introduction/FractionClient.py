@@ -95,6 +95,11 @@ def main():
     print ("Numerator of first fraction: {}".format(x.get_num()))
     print ("Denominator of first fraction: {}".format(x.get_den()))
 
+    # #5 testing solution for exercise 5 from 1.7 module - chap-1
+    # this should raise exception from Fraction class constructor
+    f = Fraction(2, 'a')
+    print ("Invalid fraction: ", f)
+
 
 if __name__ == '__main__':
     main()

@@ -37,6 +37,18 @@ def testFractionLessThan(x, y):
     return x < y
 
 
+def testFractionLessThanEqualTo(x, y):
+    return x <= y
+
+
+def testFractionGreaterThanEqualTo(x, y):
+    return x >= y
+
+
+def testFractionNotEqualTo(x, y):
+    return x != y
+
+
 def main():
     print ("Enter first fraction values")
     x = readFraction()
@@ -59,11 +71,25 @@ def main():
     ans = testFractionSubtraction(x, y)
     print ("Subtract {} and {} equal to: {}".format(x, y, ans))
 
+    # #4 testing solution for problem 4 for 1.7 module chap-1
     ans = testFractionGreaterThan(x, y)
     print ("Is {} greater than {}: {}".format(x, y, ans))
 
+    # #4 testing solution for problem 4 for 1.7 module chap-1
     ans = testFractionLessThan(x, y)
     print ("Is {} less than {}: {}".format(x, y, ans))
+
+    # #4 testing solution for problem 4 for 1.7 module chap-1
+    ans = testFractionLessThanEqualTo(x, y)
+    print ("Is {} less than equal to {}: {}".format(x, y, ans))
+
+    # #4 testing solution for problem 4 for 1.7 module chap-1
+    ans = testFractionGreaterThanEqualTo(x, y)
+    print ("Is {} greater than equal to {}: {}".format(x, y, ans))
+
+    # #4 testing solution for problem 4 for 1.7 module chap-1
+    ans = testFractionNotEqualTo(x, y)
+    print ("Is {} not equal to {}: {}".format(x, y, ans))
 
     # #1 testing solution for programming exercise 1 from 1.7 module of chap1
     print ("Numerator of first fraction: {}".format(x.get_num()))

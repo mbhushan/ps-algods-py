@@ -8,11 +8,13 @@
 #### 2. In many ways it would be better if all fractions were maintained in lowest terms right from the start. Modify the constructor for the Fraction class so that GCD is used to reduce fractions immediately. Notice that this means the \_\_add\_\_ function no longer needs to reduce. Make the necessary modifications.
 - Please refer to #2 comment in the Fraction.py file (current directory)
 
-3. Implement the remaining simple arithmetic operators ( \_\_sub\_\_ , \_\_mul\_\_ , and \_\_truediv\_\_ ).
+#### 3. Implement the remaining simple arithmetic operators ( \_\_sub\_\_ , \_\_mul\_\_ , and \_\_truediv\_\_ ).
 - Please refer to #3 comment in the Fraction.py and FractionClient.py files.
 
-4. Implement the remaining relational operators ( \_\_gt\_\_ , \_\_ge\_\_ , \_\_lt\_\_ , \_\_le\_\_ , and
-\_\_ne\_\_ )
+#### 4. Implement the remaining relational operators ( \_\_gt\_\_ , \_\_ge\_\_ , \_\_lt\_\_ , \_\_le\_\_ , and \_\_ne\_\_ )
+- Please refer to #4 comment in the Fraction.py and FractionClient.py files.
+
+
 5. Modify the constructor for the fraction class so that it checks to make sure that the nu-
 merator and denominator are both integers. If either is not an integer the constructor
 should raise an exception.

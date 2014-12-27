@@ -36,18 +36,37 @@ class Fraction:
     def __eq__(self, other):
         first_num = self.num * other.den
         second_num = self.den * other.num
-
         return first_num == second_num
 
+    # #4 solution for problem 4 for 1.7 module chap-1
+    def __ne__(self, other):
+        first_num = self.num * other.den
+        second_num = self.den * other.num
+        return first_num != second_num
+
+    # #4 solution for problem 4 for 1.7 module chap-1
     def __gt__(self, other):
         first_num = self.num * other.den
         second_num = self.den * other.num
         return first_num > second_num
 
+    # #4 solution for problem 4 for 1.7 module chap-1
+    def __ge__(self, other):
+        first_num = self.num * other.den
+        second_num = self.den * other.num
+        return first_num >= second_num
+
+    # #4 solution for problem 4 for 1.7 module chap-1
     def __lt__(self, other):
         first_num = self.num * other.den
         second_num = self.den * other.num
         return first_num < second_num
+
+    # #4 solution for problem 4 for 1.7 module chap-1
+    def __le__(self, other):
+        first_num = self.num * other.den
+        second_num = self.den * other.num
+        return first_num <= second_num
 
     # #3 solution for exercise 3 from 1.7 module chap-1
     def __mul__(self, other):

@@ -1,5 +1,4 @@
 # Fraction class
-
 from gcd import gcd
 
 
@@ -7,14 +6,21 @@ class Fraction:
 
     # #2 solution for exercise 2 from 1.7 module chap-1
     def __init__(self, top, bottom):
-        # #5 testing solution for exercise 5 from 1.7 module - chap-1
+        # #5 solution for exercise 5 from 1.7 module - chap-1
         if not isinstance(top, int):
             valErr = ValueError("{} is not integer".format(top))
             raise valErr
         if not isinstance(bottom, int):
             valErr = ValueError("{} is not integer".format(bottom))
             raise valErr
-        common = gcd(top, bottom)
+        # #6 solution for exercise 6 from 1.7 module - chap-1
+        if top < 0 and bottom < 0:
+            top = abs(top)
+            bottom = abs(bottom)
+        elif bottom < 0:
+            top = -top
+            bottom = abs(bottom)
+        common = gcd(abs(top), abs(bottom))
         self.num = top // common
         self.den = bottom // common
 
@@ -85,12 +91,12 @@ class Fraction:
     def __truediv__(self, other):
         num = self.num * other.den
         den = self.den * other.num
-        common = gcd(num, den)
+        common = gcd(abs(num), abs(den))
         return Fraction(num // common, den // common)
 
     # #3 solution for exercise 3 from 1.7 module chap-1
     def __sub__(self, other):
         num = (self.num * other.den) - (self.den * other.num)
         den = self.den * other.den
-        common = gcd(num, den)
+        common = gcd(abs(num), abs(den))
         return Fraction(num // common, den // common)

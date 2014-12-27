@@ -5,9 +5,11 @@ from gcd import gcd
 
 class Fraction:
 
+    # #2 solution for exercise 2 from 1.7 module chap-1
     def __init__(self, top, bottom):
-        self.num = top
-        self.den = bottom
+        common = gcd(top, bottom)
+        self.num = top // common
+        self.den = bottom // common
 
     def __str__(self):
         return str(self.num) + "/" + str(self.den)
@@ -23,11 +25,13 @@ class Fraction:
     def get_den(self):
         return self.den
 
+    # #2 solution for exercise 2 from 1.7 module chap-1
     def __add__(self, other):
         new_num = (self.num * other.den) + (self.den * other.num)
         new_den = self.den * other.den
-        common = gcd(new_num, new_den)
-        return Fraction(new_num // common, new_den // common)
+        return Fraction(new_num, new_den)
+        # common = gcd(new_num, new_den)
+        # return Fraction(new_num // common, new_den // common)
 
     def __eq__(self, other):
         first_num = self.num * other.den

@@ -19,15 +19,18 @@
 - Refer to #5 comment in the Fraction.py and FractionClient.py files.
 
 
-6. In the definition of fractions we assumed that negative fractions have a negative numerator and a positive denominator. Using a negative denominator would cause some of the relational operators to give incorrect results. In general, this is an unnecessary constraint. Modify the constructor to allow the user to pass a negative denominator so that all of the operators continue to work properly.
+#### 6. In the definition of fractions we assumed that negative fractions have a negative numerator and a positive denominator. Using a negative denominator would cause some of the relational operators to give incorrect results. In general, this is an unnecessary constraint. Modify the constructor to allow the user to pass a negative denominator so that all of the operators continue to work properly.
 - Refer to #6 comment in the Fraction.py file.
 
 
-7. Research the \_\_radd\_\_ method. How does it differ from \_\_add\_\_ ? When is it used?
-Implement \_\_radd\_\_ .
-8. Repeat the last question but this time consider the \_\_iadd\_\_ method.
-9. Research the \_\_repr\_\_ method. How does it differ from \_\_str\_\_ ? When is it used?
-Implement \_\_repr\_\_ .
-10. Design a class to represent a playing card. Now design a class to represent a deck of
-cards. Using these two classes, implement a favorite card game.
-11. Find a Sudoku puzzle in the local newspaper. Write a program to solve the puzzle.
+#### 7. Research the \_\_radd\_\_ method. How does it differ from \_\_add\_\_ ? When is it used? Implement \_\_radd\_\_ .
+- Refer to #7 comment in the Fraction.py and FractionClient.py File.
+
+
+#### 8. Repeat the last question but this time consider the \_\_iadd\_\_ method.
+
+#### 9. Research the \_\_repr\_\_ method. How does it differ from \_\_str\_\_ ? When is it used? Implement \_\_repr\_\_ .
+
+#### 10. Design a class to represent a playing card. Now design a class to represent a deck of cards. Using these two classes, implement a favorite card game.
+
+#### 11. Find a Sudoku puzzle in the local newspaper. Write a program to solve the puzzle.

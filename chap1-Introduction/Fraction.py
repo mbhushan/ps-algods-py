@@ -46,6 +46,14 @@ class Fraction:
         # common = gcd(new_num, new_den)
         # return Fraction(new_num // common, new_den // common)
 
+    # #7 solution for exercise 7 from 1.7 module chap-1
+    def __radd__(self, other):
+        if other == 0:
+            return self
+        else:
+            other = Fraction(other, other)
+            return self.__add__(other)
+
     def __eq__(self, other):
         first_num = self.num * other.den
         second_num = self.den * other.num

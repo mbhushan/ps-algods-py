@@ -97,8 +97,14 @@ def main():
 
     # #5 testing solution for exercise 5 from 1.7 module - chap-1
     # this should raise exception from Fraction class constructor
-    f = Fraction(2, 'a')
-    print ("Invalid fraction: ", f)
+    # Please uncomment below 2 lines to test solution for 5th problem
+    # f = Fraction(2, 'a')
+    # print ("Invalid fraction: ", f)
+
+    n = 1
+    # #7 testing solution for programming exercise 7 from 1.7 module of chap1
+    ans = 1+x
+    print ("{} plus {} is: {}".format(n, x, ans))
 
 
 if __name__ == '__main__':

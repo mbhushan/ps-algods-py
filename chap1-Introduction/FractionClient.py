@@ -47,12 +47,15 @@ def main():
     ans = testFractionEquality(x, y)
     print ("Are {} and {} equal? {}".format(x, y, ans))
 
+    # #3 testing solution for exercise 3 from 1.7 module chap-1
     ans = testFractionMultiplication(x, y)
     print ("multiplication of {} and {} is: {}".format(x, y, ans))
 
+    # #3 testing solution for exercise 3 from 1.7 module chap-1
     ans = testFractionDivision(x, y)
     print ("Division of {}  and {} is: {}".format(x, y, ans))
 
+    # #3 testing solution for exercise 3 from 1.7 module chap-1
     ans = testFractionSubtraction(x, y)
     print ("Subtract {} and {} equal to: {}".format(x, y, ans))
 

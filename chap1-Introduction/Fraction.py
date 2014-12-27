@@ -49,17 +49,20 @@ class Fraction:
         second_num = self.den * other.num
         return first_num < second_num
 
+    # #3 solution for exercise 3 from 1.7 module chap-1
     def __mul__(self, other):
         num = self.num * other.num
         den = self.den * other.den
         return Fraction(num, den)
 
+    # #3 solution for exercise 3 from 1.7 module chap-1
     def __truediv__(self, other):
         num = self.num * other.den
         den = self.den * other.num
         common = gcd(num, den)
         return Fraction(num // common, den // common)
 
+    # #3 solution for exercise 3 from 1.7 module chap-1
     def __sub__(self, other):
         num = (self.num * other.den) - (self.den * other.num)
         den = self.den * other.den

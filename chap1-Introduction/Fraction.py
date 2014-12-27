@@ -51,8 +51,14 @@ class Fraction:
         if other == 0:
             return self
         else:
-            other = Fraction(other, other)
+            other = Fraction(other, 1)
             return self.__add__(other)
+
+    # #8 solution for exercise 7 from 1.7 module chap-1
+    def __iadd__(self, other):
+        if isinstance(other, int):
+            other = Fraction(other, 1)
+        return self.__add__(other)
 
     def __eq__(self, other):
         first_num = self.num * other.den

@@ -28,6 +28,7 @@
 
 
 #### 8. Repeat the last question but this time consider the \_\_iadd\_\_ method.
+- Refer to #8 comment in the Fraction.py and FractionClient.py File.
 
 #### 9. Research the \_\_repr\_\_ method. How does it differ from \_\_str\_\_ ? When is it used? Implement \_\_repr\_\_ .
 

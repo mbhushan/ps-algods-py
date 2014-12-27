@@ -101,10 +101,21 @@ def main():
     # f = Fraction(2, 'a')
     # print ("Invalid fraction: ", f)
 
-    n = 1
+    n = 2
     # #7 testing solution for programming exercise 7 from 1.7 module of chap1
-    ans = 1+x
+    ans = n+x
     print ("{} plus {} is: {}".format(n, x, ans))
+
+    old_x = x
+    # #8 testing solution for programming exercise 7 from 1.7 module of chap1
+    x += n
+    print ("{} plus {} is: {}".format(old_x, n, x))
+
+    x = old_x
+    # #8 testing solution for programming exercise 7 from 1.7 module of chap1
+    x += y
+    print ("{} plus {} is: {}".format(old_x, y, x))
+    x = old_x
 
 
 if __name__ == '__main__':

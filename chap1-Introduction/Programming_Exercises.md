@@ -31,12 +31,12 @@
 - Refer to #8 comment in the Fraction.py and FractionClient.py File.
 
 #### 9. Research the \_\_repr\_\_ method. How does it differ from \_\_str\_\_ ? When is it used? Implement \_\_repr\_\_ .
-__ object.\_\_repr\_\_(self) __:
-Called by the repr() built-in function and by string conversions (reverse quotes) to compute the “official” string representation of an object. If at all possible, this should look like a valid Python expression that could be used to recreate an object with the same value (given an appropriate environment). If this is not possible, a string of the form <...some useful description...> should be returned. The return value must be a string object. If a class defines \_\_repr\_\_() but not \_\_str\_\_(), then \_\_repr\_\_() is also used when an “informal” string representation of instances of that class is required.
+> **object.\_\_repr\_\_(self):**
+> Called by the repr() built-in function and by string conversions (reverse quotes) to compute the “official” string representation of an object. If at all possible, this should look like a valid Python expression that could be used to recreate an object with the same value (given an appropriate environment). If this is not possible, a string of the form <...some useful description...> should be returned. The return value must be a string object. If a class defines \_\_repr\_\_() but not \_\_str\_\_(), then \_\_repr\_\_() is also used when an “informal” string representation of instances of that class is required.
 This is typically used for debugging, so it is important that the representation is information-rich and unambiguous.
 
-__ object.\_\_str\_\_(self) __:
-Called by the str() built-in function and by the print statement to compute the “informal” string representation of an object. This differs from __repr__() in that it does not have to be a valid Python expression: a more convenient or concise representation may be used instead. The return value must be a string object.
+> **object.\_\_str\_\_(self):**
+> Called by the str() built-in function and by the print statement to compute the “informal” string representation of an object. This differs from __repr__() in that it does not have to be a valid Python expression: a more convenient or concise representation may be used instead. The return value must be a string object.
 
 - Please refer to #9 comment in Fraction.py and FractionClient.py file.
 

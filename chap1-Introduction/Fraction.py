@@ -27,6 +27,10 @@ class Fraction:
     def __str__(self):
         return str(self.num) + "/" + str(self.den)
 
+    # #9 solution for exercise 9 from 1.7 module chap-1
+    def __repr__(self):
+        return '%s(%r)' % (self.__class__, self.__str__())
+
     def show(self):
         print (self.num, "/", self.den)
 

@@ -107,15 +107,18 @@ def main():
     print ("{} plus {} is: {}".format(n, x, ans))
 
     old_x = x
-    # #8 testing solution for programming exercise 7 from 1.7 module of chap1
+    # #8 testing solution for programming exercise 8 from 1.7 module of chap1
     x += n
     print ("{} plus {} is: {}".format(old_x, n, x))
 
     x = old_x
-    # #8 testing solution for programming exercise 7 from 1.7 module of chap1
+    # #8 testing solution for programming exercise 8 from 1.7 module of chap1
     x += y
     print ("{} plus {} is: {}".format(old_x, y, x))
     x = old_x
+
+    # #9 testing solution for programming exercise 9 from 1.7 module of chap1
+    print ("Testing __repr__: ", repr(x))
 
 
 if __name__ == '__main__':

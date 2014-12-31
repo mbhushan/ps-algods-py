@@ -77,82 +77,79 @@ def showPlayedCards(cards, subject):
         print (str(card))
 
 
+def applyResults(computer, player, tableCards, result):
+    if result == 1:
+        print("Computer Won Hand! :)")
+        computer.addMultipleCards(tableCards)
+    elif result == 2:
+        print("You Won Hand! :)")
+        player.addMultipleCards(tableCards)
+    elif result == 4:
+        print ("Computer Won the Game!! Congrats to her :)")
+        return None
+    elif result == 5:
+        print ("YOU WON the Game!! COngratulations :)")
+        return None
+    return (computer, player)
+
+
+def checkCompCards(compCards):
+    if compCards is None:
+        print ("You terminated the Game!")
+        return 0
+    elif len(compCards) == 0:
+        print ("YOU WON!! COngratulations :)")
+        return 0
+    else:
+        return 1
+
+
+def checkPlayerCards(playerCards):
+    if playerCards is None:
+        print ("You terminated the Game!")
+        return 0
+    elif len(playerCards) == 0:
+        print ("Computer Won!! Congrats to her :)")
+        return 0
+    else:
+        return 1
+
+
 def nowPlay(player, computer):
+    result = 0
     while True:
-        tableCards = []
-        compCards = computerPlay(computer)
-        if compCards is None:
-            print ("You terminated the Game!")
-            return
-        elif len(compCards) == 0:
-            print ("YOU WON!! COngratulations :)")
+        if result == 3:
+            n = 2
+            print ("EQUAL Cards in Rank - Now each player will put 2 cards\n" +
+                   "on table. One face down and one face up. Player having\n" +
+                   "high face up card would win the hand and take all the\n"
+                   + "cards on the table.")
+        else:
+            n = 1
+            tableCards = []
+        compCards = computerPlay(computer, n)
+        check = checkCompCards(compCards)
+        if check == 0:
             return
         tableCards.extend(compCards)
         showPlayedCards(compCards, "Computer")
 
-        playerCards = playerPlay(player)
+        playerCards = playerPlay(player, n)
+        check = checkPlayerCards(playerCards)
+        if check == 0:
+            return
 
-        if playerCards is None:
-            print ("You terminated the Game!")
-            return
-        elif len(playerCards) == 0:
-            print ("Computer Won!! Congrats to her :)")
-            return
         tableCards.extend(playerCards)
         showPlayedCards(playerCards, "You")
 
         result = compareCards(compCards, playerCards)
-        if result == 1:
-            computer.addMultipleCards(tableCards)
-        elif result == 2:
-            player.addMultipleCards(tableCards)
-        elif result == 4:
-            print ("Computer Won!! Congrats to her :)")
-            return
-        elif result == 5:
-            print ("YOU WON!! COngratulations :)")
-            return
-        elif result == 3:
-            while True:
-                print ("EQUAL Cards - Now each player will put 2 cards on table\
-                   - One face down and one face up. Player having high face up\
-                   card would win the hand and take all the cards on the \
-                   table.")
-
-                compCards = computerPlay(computer)
-                if compCards is None:
-                    print ("You terminated the Game!")
-                    return
-                elif len(compCards) == 0:
-                    print ("YOU WON!! COngratulations :)")
-                    return
-                tableCards.extend(compCards)
-                showPlayedCards(compCards, "Computer")
-
-                playerCards = playerPlay(player)
-                if playerCards is None:
-                    print ("You terminated the Game!")
-                    return
-                elif len(playerCards) == 0:
-                    print ("Computer Won!! Congrats to her :)")
-                    return
-                showPlayedCards(playerCards, "You")
-                tableCards.extend(playerCards)
-
-                result = compareCards(compCards, playerCards)
-
-                if result == 1:
-                    computer.addMultipleCards(tableCards)
-                    break
-                elif result == 2:
-                    player.addMultipleCards(tableCards)
-                    break
-                elif result == 4:
-                    print ("Computer Won!! Congrats to her :)")
-                    return
-                elif result == 5:
-                    print ("YOU WON!! COngratulations :)")
-                    return
+        if result != 3:
+            result = applyResults(computer, player, tableCards, result)
+            if result is not None:
+                computer, player = result
+                result = 0
+            else:
+                return
 
 
 def main():

@@ -42,11 +42,11 @@ This is typically used for debugging, so it is important that the representation
 
 #### 10. Design a class to represent a playing card. Now design a class to represent a deck of cards. Using these two classes, implement a favorite card game.
 - We are going to implement the War card game - following resources might be useful for reference
-> http://www.pagat.com/war/war.html
-> http://en.wikipedia.org/wiki/War_(card_game)
-- Please refer following files:
-* Card.py
-* Deck.py
-* WarCardGame.py
+> -  http://www.pagat.com/war/war.html
+> - http://en.wikipedia.org/wiki/War_(card_game)
+Please refer following files:
+> * Card.py
+> * Deck.py
+> * WarCardGame.py
 
 #### 11. Find a Sudoku puzzle in the local newspaper. Write a program to solve the puzzle.

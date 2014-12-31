@@ -41,10 +41,10 @@ This is typically used for debugging, so it is important that the representation
 - Please refer to #9 comment in Fraction.py and FractionClient.py file.
 
 #### 10. Design a class to represent a playing card. Now design a class to represent a deck of cards. Using these two classes, implement a favorite card game.
-- We are going to implement the War card game - following resources might be useful for reference
+** We are going to implement the War card game - following resources might be useful for reference**
 > -  http://www.pagat.com/war/war.html
 > - http://en.wikipedia.org/wiki/War_(card_game)
-Please refer following files:
+> **Please refer following files:**
 > * Card.py
 > * Deck.py
 > * WarCardGame.py

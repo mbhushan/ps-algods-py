@@ -1,0 +1,5 @@
+Enter list of numbers - comma separated: 
+9, 8, 7, 19, 11, 12, 16, 15, 25, 2, 34, 36, 31, 61, 29
+Minimum(O(n^2)) is: 2
+Minimum(O(n)) is: 2
+

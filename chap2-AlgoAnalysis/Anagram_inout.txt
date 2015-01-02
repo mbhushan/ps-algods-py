@@ -1,0 +1,12 @@
+Enter first string: earth
+Enter second string: Heart
+are "earth" and "Heart" anagrams? -> True
+=========================================================
+Enter first string: python
+Enter second string: typhon
+are "python" and "typhon" anagrams? -> True
+========================================================
+Enter first string: leafs
+Enter second string: feale   
+are "leafs" and "feale" anagrams? -> False
+

@@ -17,3 +17,15 @@ class Sudoku(object):
     def cross(self, A, B):
         """ Cross product of elements in A and B """
         return [a+b for a in A for b in B]
+
+    def getSquares(self):
+        return self.squares
+
+    def getUnitlist(self):
+        return self.unitlist
+
+    def getUnits(self):
+        return self.units
+
+    def getPeers(self):
+        return self.peers

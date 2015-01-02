@@ -1,0 +1,15 @@
+Enter first string: heart
+Enter second string: Earth
+Are "heart" and "Earth" anagrams? -> True
+=================================================
+Enter first string: apple
+Enter second string: Pleap
+Are "apple" and "Pleap" anagrams? -> True
+=================================================
+Enter first string: dimple
+Enter second string: pimple
+Are "dimple" and "pimple" anagrams? -> False
+=================================================
+Enter first string: 
+Enter second string: time
+Are "" and "time" anagrams? -> False

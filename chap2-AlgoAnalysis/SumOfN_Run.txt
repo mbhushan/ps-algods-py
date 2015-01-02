@@ -1,0 +1,8 @@
+Summation of 10000 numbers is 50005000 taking  0.0015683 seconds
+Fast Summation of 10000 numbers is 50005000 taking  0.0000017 seconds
+Summation of 100000 numbers is 5000050000 taking  0.0171022 seconds
+Fast Summation of 100000 numbers is 5000050000 taking  0.0000019 seconds
+Summation of 1000000 numbers is 500000500000 taking  0.1789942 seconds
+Fast Summation of 1000000 numbers is 500000500000 taking  0.0000026 seconds
+Summation of 10000000 numbers is 50000005000000 taking  1.7879784 seconds
+Fast Summation of 10000000 numbers is 50000005000000 taking  0.0000031 seconds

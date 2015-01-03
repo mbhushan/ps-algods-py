@@ -1,0 +1,10 @@
+TOTAL TIME for 10000 index access in 1000000 list ofnumbers :    0.038751423 seconds
+TOTAL TIME for 10000 index access in 2000000 list ofnumbers :    0.039394982 seconds
+TOTAL TIME for 10000 index access in 3000000 list ofnumbers :    0.040124800 seconds
+TOTAL TIME for 10000 index access in 4000000 list ofnumbers :    0.039911843 seconds
+TOTAL TIME for 10000 index access in 5000000 list ofnumbers :    0.038808707 seconds
+TOTAL TIME for 10000 index access in 6000000 list ofnumbers :    0.038899759 seconds
+TOTAL TIME for 10000 index access in 7000000 list ofnumbers :    0.038874536 seconds
+TOTAL TIME for 10000 index access in 8000000 list ofnumbers :    0.038580567 seconds
+TOTAL TIME for 10000 index access in 9000000 list ofnumbers :    0.038633072 seconds
+TOTAL TIME for 10000 index access in 10000000 list ofnumbers :    0.038984403 seconds

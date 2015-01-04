@@ -8,8 +8,11 @@
 > As we can see in the list_index_input.txt the time remains constant (0.038751423 secs)  
 > So we can conclude the access time does not depend on list length and is constant ie O(1)  
 
+##### 2. Devise an experiment to verify that get item and set item are O(1) for dictionaries.
+> Refer to file dict_getset.py for implementation and dict_getset_input.txt for output.  
+> **Approach** : We do n number of sets and gets in dictionary and measure the time for  
+> 1 set and get and see that its fairly constant and independent of the size of the dictionary.
 
-2. Devise an experiment to verify that get item and set item are O(1) for dictionaries.
 3. Devise an experiment that compares the performance of the del operator on lists and
 dictionaries.
 4. Given a list of numbers in random order write a linear time algorithm to find the kth

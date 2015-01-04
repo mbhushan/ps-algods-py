@@ -1,7 +1,7 @@
 ## 2.7 Chapter-2 Programming Exercises - Algorithm Analysis
 =====================================================================
 
-#### * Devise an experiment to verify that the list index operator is O(1).
+##### 1. Devise an experiment to verify that the list index operator is O(1).
 > Please refer to the file list_index.py  
 > Approach: we create a list of size 1000000 and do 10K index access,  
 > then we increase the size of list 1M at each step and continue with 10K index access.  

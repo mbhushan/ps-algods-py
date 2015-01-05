@@ -1,0 +1,42 @@
+Executing 100000 deletes on dict
+Dict del time per operation: 0.000000441241 secs
+Executing 200000 deletes on dict
+Dict del time per operation: 0.000000172615 secs
+Executing 300000 deletes on dict
+Dict del time per operation: 0.000000099240 secs
+Executing 400000 deletes on dict
+Dict del time per operation: 0.000000083250 secs
+Executing 500000 deletes on dict
+Dict del time per operation: 0.000000057852 secs
+Executing 600000 deletes on dict
+Dict del time per operation: 0.000000048242 secs
+Executing 700000 deletes on dict
+Dict del time per operation: 0.000000057865 secs
+Executing 800000 deletes on dict
+Dict del time per operation: 0.000000037080 secs
+Executing 900000 deletes on dict
+Dict del time per operation: 0.000000032459 secs
+Executing 1000000 deletes on dict
+Dict del time per operation: 0.000000037013 secs
+
+
+Executing 100000 deletes on list
+List Del Time per operation: 0.000035710628 secs
+Executing 200000 deletes on list
+List Del Time per operation: 0.000017075064 secs
+Executing 300000 deletes on list
+List Del Time per operation: 0.000011254690 secs
+Executing 400000 deletes on list
+List Del Time per operation: 0.000008568728 secs
+Executing 500000 deletes on list
+List Del Time per operation: 0.000006982214 secs
+Executing 600000 deletes on list
+List Del Time per operation: 0.000005812062 secs
+Executing 700000 deletes on list
+List Del Time per operation: 0.000005089027 secs
+Executing 800000 deletes on list
+List Del Time per operation: 0.000004390891 secs
+Executing 900000 deletes on list
+List Del Time per operation: 0.000003936278 secs
+Executing 1000000 deletes on list
+List Del Time per operation: 0.000003436626 secs

@@ -21,4 +21,9 @@
 
 ##### 4. Given a list of numbers in random order write a linear time algorithm to find the kth smallest number in the list.  
 Explain why your algorithm is linear.
+> Please refer FindKMin.py file for implementation.  
+> Sample input/output is captured in FindKMin_inout.txt  
+
 ##### 5. Can you improve the algorithm from the previous problem to be O(n log(n))?
+> Please refer FindKMin.py file for implementation.  
+> Sample input/output is captured in FindKMin_inout.txt  

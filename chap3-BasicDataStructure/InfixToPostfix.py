@@ -5,13 +5,13 @@ def infixToPostfix(infix):
     opStack = Stack()
     prec = {"^": 4, "*": 3, "/": 3, "+": 2, "-": 2, "(": 1}
     postfixList = []
-    tokenList = list(infix.replace(" ", ""))
+    tokenList = list(infix.split(" "))
     charTokens = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     numTokens = "1234567890"
 
     print ("token list: ", tokenList)
     for token in tokenList:
-        if token in charTokens or token in numTokens:
+        if token in charTokens or token in numTokens or token.isdigit():
             postfixList.append(token)
         elif token == "(":
             opStack.push(token)
@@ -28,11 +28,11 @@ def infixToPostfix(infix):
     while not opStack.is_empty():
         postfixList.append(opStack.pop())
 
-    return ''.join(postfixList)
+    return ' '.join(postfixList)
 
 
 def readInput():
-    print ("Enter infix expression without space.")
+    print ("Enter infix expression with space.")
     infix = input("infix expression: ")
     # validate expr?
     return infix

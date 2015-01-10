@@ -1,0 +1,11 @@
+Enter infix expression with space.
+infix expression: 10 + 3 * 5 / ( 16 - 4 )
+token list:  ['10', '+', '3', '*', '5', '/', '(', '16', '-', '4', ')']
+Postfix expression:  10 3 5 * 16 4 - / +
+===========================================================================
+Enter infix expression with space.
+infix expression: 5 * 3 ^ ( 4 - 2 )
+token list:  ['5', '*', '3', '^', '(', '4', '-', '2', ')']
+Postfix expression:  5 3 4 2 - ^ *
+
+

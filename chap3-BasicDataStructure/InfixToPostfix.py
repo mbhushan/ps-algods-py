@@ -3,7 +3,7 @@ from Stack import Stack
 
 def infixToPostfix(infix):
     opStack = Stack()
-    prec = {"*": 3, "/": 3, "+": 2, "-": 2, "(": 1}
+    prec = {"^": 4, "*": 3, "/": 3, "+": 2, "-": 2, "(": 1}
     postfixList = []
     tokenList = list(infix.replace(" ", ""))
     charTokens = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -32,7 +32,8 @@ def infixToPostfix(infix):
 
 
 def readInput():
-    infix = input("Enter valid infix expression: ")
+    print ("Enter infix expression without space.")
+    infix = input("infix expression: ")
     # validate expr?
     return infix
 

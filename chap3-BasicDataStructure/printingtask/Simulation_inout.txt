@@ -1,0 +1,36 @@
+Please enter page rate: 10
+Avg wait:  36.64 secs, Tasks remaining:   0
+Avg wait:  29.00 secs, Tasks remaining:   2
+Avg wait:  13.79 secs, Tasks remaining:   0
+Avg wait:  19.70 secs, Tasks remaining:   0
+Avg wait:  21.52 secs, Tasks remaining:   0
+Avg wait:   6.00 secs, Tasks remaining:   0
+Avg wait:   7.25 secs, Tasks remaining:   0
+Avg wait:   4.85 secs, Tasks remaining:   0
+Avg wait:  21.38 secs, Tasks remaining:   0
+Avg wait:  15.80 secs, Tasks remaining:   0
+==============================================================
+Please enter page rate: 5
+Avg wait: 250.47 secs, Tasks remaining:   0
+Avg wait: 461.14 secs, Tasks remaining:   9
+Avg wait:   0.00 secs, Tasks remaining:   0
+Avg wait:  46.82 secs, Tasks remaining:   0
+Avg wait:   9.78 secs, Tasks remaining:   0
+Avg wait:  25.36 secs, Tasks remaining:   0
+Avg wait:  60.06 secs, Tasks remaining:   2
+Avg wait:  20.42 secs, Tasks remaining:   1
+Avg wait: 205.17 secs, Tasks remaining:   4
+Avg wait:  45.38 secs, Tasks remaining:   0
+==============================================================
+Please enter page rate: 3
+Avg wait: 440.25 secs, Tasks remaining:   3
+Avg wait: 576.60 secs, Tasks remaining:   4
+Avg wait: 331.86 secs, Tasks remaining:   3
+Avg wait: 244.43 secs, Tasks remaining:   0
+Avg wait: 732.33 secs, Tasks remaining:   5
+Avg wait: 146.88 secs, Tasks remaining:   2
+Avg wait: 489.07 secs, Tasks remaining:   8
+Avg wait: 602.88 secs, Tasks remaining:   3
+Avg wait: 223.53 secs, Tasks remaining:   4
+Avg wait: 375.79 secs, Tasks remaining:   2
+

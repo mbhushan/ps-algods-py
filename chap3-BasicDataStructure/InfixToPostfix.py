@@ -1,11 +1,12 @@
 from Stack import Stack
+from ParenChecker import parenChecker
 
 
-def infixToPostfix(infix):
+def infixToPostfix(tokenList):
     opStack = Stack()
     prec = {"^": 4, "*": 3, "/": 3, "+": 2, "-": 2, "(": 1}
     postfixList = []
-    tokenList = list(infix.split(" "))
+    # tokenList = list(infix.split(" "))
     charTokens = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     numTokens = "1234567890"
 
@@ -31,11 +32,44 @@ def infixToPostfix(infix):
     return ' '.join(postfixList)
 
 
+def validateInput(expr):
+    if not expr:
+        return False
+    expr = expr.strip()
+
+    parenList = []
+    for e in expr:
+        if e == '(' or e == ')':
+            parenList.append(e)
+    parenExpr = ''.join(parenList)
+    if not parenChecker(parenExpr):
+        return False
+    tokenList = expr.split(" ")
+    sanitizedTokList = []
+    for t in tokenList:
+        t = t.strip()
+        sanitizedTokList.append(t)
+        if t.isdigit():
+            continue
+        elif t == '+' or t == '-' or t == '/' or t == '*' or t == '^':
+            continue
+        elif t == '(' or t == ')':
+            continue
+        else:
+            return False
+    return sanitizedTokList
+
+
 def readInput():
     print ("Enter infix expression with space.")
     infix = input("infix expression: ")
-    # validate expr?
-    return infix
+    tokList = validateInput(infix)
+    while not tokList:
+        print ("Bad Input! Please enter valid infix expression")
+        print ("Enter infix expression with space.")
+        infix = input("infix expression: ")
+
+    return tokList
 
 
 def main():

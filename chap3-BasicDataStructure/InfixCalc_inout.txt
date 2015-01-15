@@ -1,0 +1,12 @@
+Enter infix expression with space.
+infix expression: ( 2 + 3 ) ^ ( 1 + 4 )
+token list:  ['(', '2', '+', '3', ')', '^', '(', '1', '+', '4', ')']
+Postfix:  2 3 + 1 4 + ^
+Result:  3125
+===========================================================================
+Enter infix expression with space.
+infix expression: ( 2 + 4 ) * 3  
+token list:  ['(', '2', '+', '4', ')', '*', '3']
+Postfix:  2 4 + 3 *
+Result:  18
+

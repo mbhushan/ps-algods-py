@@ -1,0 +1,35 @@
+Enter expression for calculator: 
+2+3
+token list:  ['2', '+', '3']
+postfix:  2 3 +
+ANS:  5
+press any key to continue, 'n' to exit.
+a
+Enter expression for calculator: 
+6+7*2
+token list:  ['6', '+', '7', '*', '2']
+postfix:  6 7 2 * +
+ANS:  20
+press any key to continue, 'n' to exit.
+a
+Enter expression for calculator: 
+(1+4)^(2+3)
+token list:  ['(', '1', '+', '4', ')', '^', '(', '2', '+', '3', ')']
+postfix:  1 4 + 2 3 + ^
+ANS:  3125
+press any key to continue, 'n' to exit.
+a
+Enter expression for calculator: 
+((2+3)*(1+4))
+token list:  ['(', '(', '2', '+', '3', ')', '*', '(', '1', '+', '4', ')', ')']
+postfix:  2 3 + 1 4 + *
+ANS:  25
+press any key to continue, 'n' to exit.
+
+Enter expression for calculator: 
+
+token list:  []
+postfix:  
+Invalid postfix expression
+ANS:  None
+press any key to continue, 'n' to exit.

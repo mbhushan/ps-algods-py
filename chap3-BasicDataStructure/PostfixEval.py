@@ -32,6 +32,13 @@ def doMath(operator, x, y):
         if y == 0:
             return None
         return (float(x)/y)
+    elif operator == '^':
+        if x == 0:
+            return None
+        elif y == 0:
+            return 1
+        else:
+            return x ** y
     return None
 
 

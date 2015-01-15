@@ -7,5 +7,11 @@
 ##### 2. Modify the postfix evaluation algorithm so that it can handle errors.
 > Please refer to PostfixEval.py - Though there are basic error handling checks - see if you can extend it.  
 
+##### 3. Implement a direct infix evaluator that combines the functionality of infix-to-postfix conversion and the postfix evaluation algorithm. Your evaluator should process infix tokens from left to right and use two stacks, one for operators and one for operands, to perform
+the evaluation.
+> Please refer to InfixCalc.py for implementation and InfixCalc_inout.txt for sample input/output.  
+
+
+
 
 

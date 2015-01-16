@@ -1,0 +1,10 @@
+Enqueue for 1000 items: 570
+Enqueue for 1000 items: 543
+Enqueue for 1000 items: 558
+Enqueue for 1000 items: 551
+==================================================
+Dequeue for 1000 items: 970
+Dequeue for 1000 items: 3880
+Dequeue for 1000 items: 3726
+Dequeue for 1000 items: 82
+

@@ -22,5 +22,7 @@
 ##### 7. It is possible to implement a queue such that both enqueue and dequeue have O(1) performance on average. In this case it means that most of the time enqueue and dequeue will be O(1) except in one particular circumstance where dequeue will be O(n).
 > Please refer to QueueLinkedList.py and QueueLinkedListClient.py for the linked list implementation of Queue. Here both enqueue and dequeue operations are O(1) 
 
+##### 9. Modify the Hot Potato simulation to allow for a randomly chosen counting value so that each pass is not predictable from the previous one.
+> Please refer to HotPotatoRand.py for implementation and HotPotatoRand_inout.txt for input/output examples
 
-
+##### 10. Implement a radix sorting machine. A radix sort for base 10 integers is a mechanical sorting technique that utilizes a collection of bins, one main bin and 10 digit bins. Each bin acts like a queue and maintains its values in the order that they arrive. The algorithm begins by placing each number in the main bin. Then it considers each value digit by digit. The first value is removed and placed in a digit bin corresponding to the digit being considered. For example, if the ones digit is being considered, 534 is placed in digit bin 4 and 667 is placed in digit bin 7. Once all the values are placed in the corresponding digit bins, the values are collected from bin 0 to bin 9 and placed back in the main bin. The process continues with the tens digit, the hundreds, and so on. After the last digit is processed, the main bin contains the values in order. 

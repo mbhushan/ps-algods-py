@@ -43,3 +43,6 @@ Example
 ```
 is intended only to show the matching and nesting structure for tags in the language. Write a program that can check an HTML document for proper opening and closing tags. 
 > Please refer to HTMLTagValidator.py for implementation and HTMLTagValidator_inout.txt for sample input/output.
+
+##### 12. To implement the length method, we counted the number of nodes in the list. An alter- native strategy would be to store the number of nodes in the list as an additional piece of data in the head of the list. Modify the UnorderedList class to include this information and rewrite the length method. 
+> Please refer to LinkedList.py for unordered link list implementation and LinkedListClient.py for testing the main class LinkedList.py

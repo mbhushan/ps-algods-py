@@ -46,3 +46,13 @@ is intended only to show the matching and nesting structure for tags in the lang
 
 ##### 12. To implement the length method, we counted the number of nodes in the list. An alter- native strategy would be to store the number of nodes in the list as an additional piece of data in the head of the list. Modify the UnorderedList class to include this information and rewrite the length method. 
 > Please refer to LinkedList.py for unordered link list implementation and LinkedListClient.py for testing the main class LinkedList.py
+
+##### 13. Implement the remove method so that it works correctly in the case where the item is not in the list.
+> refer to remove method in LinkedList.py and LinkedListClient.py testing methods.
+
+##### 14. Modify the list classes to allow duplicates. Which methods will be impacted by this change?
+##### 15. Implement the \'__str__\' method in the UnorderedList class. What would be a good string representation for a list?
+##### 16. Implement \'__str__\' method so that lists are displayed the Python way (with square brackets).
+> LinkedList.py has \'__str__\' method which represents(prints) the LinkedList like python lists and LinkedList.py allows for duplicates nodes as well - remove method deletes the first first occurance of the data from head if found.
+
+

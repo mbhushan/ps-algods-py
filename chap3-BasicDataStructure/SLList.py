@@ -19,7 +19,10 @@ class LinkedList:
             return None
         if (i + self.N) < 0:
             return None
-        ind = i + self.N
+        if i < 0:
+            ind = i + self.N
+        else:
+            ind = i
         curr = self.head
         prev = None
         count = 0
@@ -41,6 +44,43 @@ class LinkedList:
             self.N -= 1
             return node
         return None
+
+    def insert(self, data, index):
+        """ insert data at given index in the linked list"""
+        if not isinstance(index, int):
+            print ("Index should be of type Integer, str() passed")
+            return False
+        if index < 0 or index > self.size():
+            print ("Bad Index Range!")
+            return False
+        curr = self.head
+        prev = None
+        count = 0
+        node = Node(data)
+
+        if index == self.size():
+            print ("Inserting at tail")
+            self.tail.next = node
+            self.tail = self.tail.next
+            self.N += 1
+            return True
+
+        while curr is not None:
+            if count == index:
+                break
+            prev = curr
+            curr = curr.next
+            count += 1
+        if prev is None:
+            print ("Inserting at head")
+            node.next = self.head
+            self.head = node
+        else:
+            print ("Inserting in between: ", count)
+            node.next = curr
+            prev.next = node
+        self.N += 1
+        return True
 
     def index(self, x):
         """ return the index in the linked list of the first item
@@ -66,6 +106,21 @@ class LinkedList:
             self.tail.next = node
             self.tail = self.tail.next
         self.N += 1
+
+    def search(self, key):
+        """search for key and if found return the index. return -1 otherwise"""
+        curr = self.head
+        index = 0
+        found = False
+        while curr is not None:
+            if key == curr.data:
+                found = True
+                return index
+            curr = curr.next
+            index += 1
+        if found:
+            return index
+        return -1
 
     def size(self):
         return self.N

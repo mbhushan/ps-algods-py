@@ -55,4 +55,5 @@ is intended only to show the matching and nesting structure for tags in the lang
 ##### 16. Implement \'__str__\' method so that lists are displayed the Python way (with square brackets).
 > LinkedList.py has \'__str__\' method which represents(prints) the LinkedList like python lists and LinkedList.py allows for duplicates nodes as well - remove method deletes the first first occurance of the data from head if found.
 
-
+##### 17. Implement the remaining operations defined in the UnorderedList ADT (append, index, pop, insert).
+> Refer to SLList.py for implementation of append, index, pop and insert. Test client code is written in SLListClient.py

@@ -37,7 +37,7 @@ def testLinkedList():
         elif choice == '8':
             break
         else:
-            print ("BAD Choice! Choose from 1 to 4 numbers")
+            print ("BAD Choice! Choose from 1 to 8 numbers")
 
 
 def sliceList(ll):

@@ -60,3 +60,6 @@ is intended only to show the matching and nesting structure for tags in the lang
 
 ##### 18. Implement a slice method for the UnorderedList class. It should take two parameters, start and stop, and return a copy of the list starting at the start position and going up to but not including the stop position. 
 > Please refer the slice(start, stop) method in SLList.py - testing method has been added in SLListClient.py
+
+##### 19. Implement the remaining operations defined in the OrderedList ADT.
+> Please refer to OrderedList.py for operations implementation and OrderedListClient.py for testing OrderedList.py class

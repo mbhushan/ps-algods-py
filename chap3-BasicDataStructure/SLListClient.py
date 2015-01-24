@@ -11,7 +11,8 @@ def testLinkedList():
                "4 - Search\n",
                "5 - Insert\n",
                "6 - Size\n",
-               "7 - Exit\n")
+               "7 - Slice\n",
+               "8 - Exit\n")
         choice = input()
         if choice == '1':
             ll = addll(ll)
@@ -32,9 +33,31 @@ def testLinkedList():
             size(ll)
             ll.__str__()
         elif choice == '7':
+            sliceList(ll)
+        elif choice == '8':
             break
         else:
             print ("BAD Choice! Choose from 1 to 4 numbers")
+
+
+def sliceList(ll):
+    start = input("Enter start index: ")
+    end = input("Enter stop index: ")
+    start = start.strip()
+    end = end.strip()
+    if not start.isdigit() or not end.isdigit():
+        print ("Bad start or stop index")
+        return None
+    start = int(start)
+    end = int(end)
+    front = ll.slice(start, end)
+    curr = front
+    result = []
+    while curr is not None:
+        result.append(curr.data)
+        curr = curr.next
+    print ("Sliced list: ")
+    print (result)
 
 
 def insert(ll):

@@ -8,6 +8,32 @@ class LinkedList:
         self.tail = None
         self.N = 0
 
+    def slice(self, start, stop):
+        """ return a copy of the list starting at start position
+        and going upto but not including stop position """
+        if (start < 1) or (start > stop) or (stop > self.N + 1):
+            print ("Invalid range.")
+            return None
+        stop = stop - 1
+        curr = self.head
+        count = 1
+        while curr is not None:
+            if count == start:
+                break
+            curr = curr.next
+            count += 1
+        node = Node(curr.data)
+        front = node
+        back = front
+        while count < stop:
+            curr = curr.next
+            node = Node(curr.data)
+            back.next = node
+            back = back.next
+            count += 1
+
+        return front
+
     def pop(self, i=-1):
         """ Remove the item at the given position in the linked list,
         and return it.

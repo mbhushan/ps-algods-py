@@ -69,3 +69,6 @@ is intended only to show the matching and nesting structure for tags in the lang
 
 ##### 21. Implement a queue using linked lists.
 > Please refer to QueueLinkedList.py for implementation and QueueLinkedListClient.py for test client code. 
+
+##### 22. Implement a deque using linked lists.
+> Please refer to DequeLinkedList.py for Deque implementation and DequeLinkedListClient.py for client test code

@@ -63,3 +63,6 @@ is intended only to show the matching and nesting structure for tags in the lang
 
 ##### 19. Implement the remaining operations defined in the OrderedList ADT.
 > Please refer to OrderedList.py for operations implementation and OrderedListClient.py for testing OrderedList.py class
+
+##### 20. Implement a stack using linked lists.
+> Please refer to StackLinkedList.py for implementation and StackLinkedListClient.py for test client code.

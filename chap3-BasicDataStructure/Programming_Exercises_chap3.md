@@ -66,3 +66,6 @@ is intended only to show the matching and nesting structure for tags in the lang
 
 ##### 20. Implement a stack using linked lists.
 > Please refer to StackLinkedList.py for implementation and StackLinkedListClient.py for test client code.
+
+##### 21. Implement a queue using linked lists.
+> Please refer to QueueLinkedList.py for implementation and QueueLinkedListClient.py for test client code. 

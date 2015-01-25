@@ -72,3 +72,11 @@ is intended only to show the matching and nesting structure for tags in the lang
 
 ##### 22. Implement a deque using linked lists.
 > Please refer to DequeLinkedList.py for Deque implementation and DequeLinkedListClient.py for client test code
+
+###### 23. Design and implement an experiment that will compare the performance of a Python list with a list implemented as a linked list.
+> Approach: List in python has array implementation - what this means is elements of list are stored in contiguous memory locations. So operations like index(), search()(binary search - if data is sorted), sort() can be really efficient. Cons here is when the list is full and we need to add more data to it, python has to copy the old list to a bigger contiguous space, similarly when we have removed a lot of elements from the list we need to resize() it to smaller size - this again requires copy to smaller contiguous memory locations. Experimentation is left as an exercise to user :)
+
+###### 24. Design and implement an experiment that will compare the performance of the Python list based stack and queue with the linked list implementation.
+> In Contrast Linked List implementation works really well when we need to add elements as we never have to copy the whole list (unlike List in python), or when we need to remove lot of elements from the linked list - This implementation ensures optimal usage of memory. Though there are associated overheads of maintaining pointers. Indexing and Search (BinarySearch) can be challenging and deteriorate performance when implemented in linked list. Experimentation is left as an exercise :)
+
+##### 25. The linked list implementation given above is called a singly linked list because each node has a single reference to the next node in sequence. An alternative implementation is known as a doubly linked list. In this implementation, each node has a reference to the next node (commonly called next) as well as a reference to the preceding node (commonly called back). The head reference also contains two references, one to the first node in the linked list and one to the last. Code this implementation in Python. 

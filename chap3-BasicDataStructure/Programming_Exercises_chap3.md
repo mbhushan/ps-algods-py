@@ -81,3 +81,6 @@ is intended only to show the matching and nesting structure for tags in the lang
 
 ##### 25. The linked list implementation given above is called a singly linked list because each node has a single reference to the next node in sequence. An alternative implementation is known as a doubly linked list. In this implementation, each node has a reference to the next node (commonly called next) as well as a reference to the preceding node (commonly called back). The head reference also contains two references, one to the first node in the linked list and one to the last. Code this implementation in Python. 
 > Please refer to DoublyLinkedList.py file for implementation and APIs and DoublyLinkedListClient.py for client test code.
+
+##### 26. Create an implementation of a queue that would have an average performance of O(1) for enqueue and dequeue operations.
+> QueueLinkedList.py has implementation with front and back pointers which keep track of the head and tail of the queue - this helps in implementing Enqueu and Dequeue operations in O(1). Please refer to QueueLinkedListClient.py for client test code.

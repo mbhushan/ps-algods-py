@@ -23,6 +23,73 @@ class DoublyLinkedList:
             count += 1
         print (dlList)
 
+    def search(self, key):
+        if self.isEmpty():
+            print ("List is Empty")
+            return -1
+        index = 0
+        found = False
+        curr = self.head
+        while index < self.N:
+            if curr.data == key:
+                found = True
+                break
+            index += 1
+            curr = curr.front
+        if found:
+            return index
+        return -1
+
+    def removeIndex(self, index):
+        if self.isEmpty():
+            print ("List is Empty!")
+            return None
+        if index < 0:
+            index = index + self.N
+
+        if (index < 0) or (index > (self.N - 1)):
+            print ("Bad index value.. exiting")
+            return None
+
+        count = 0
+        curr = self.head
+        while count < index:
+            count += 1
+            curr = curr.front
+        curr.front.back = curr.back
+        curr.back.front = curr.front
+        if index == 0:
+            self.head = self.head.front
+        curr.front = None
+        curr.back = None
+        self.N -= 1
+        return curr
+
+    def removeRear(self):
+        if self.isEmpty():
+            print ("list is empty!")
+            return None
+        node = self.head.back
+        self.head.back.back.front = self.head
+        self.head.back = self.head.back.back
+        node.front = None
+        node.back = None
+        self.N -= 1
+        return node
+
+    def removeFront(self):
+        if self.isEmpty():
+            print ("list is empty!")
+            return None
+        node = self.head
+        self.head.front.back = self.head.back
+        self.head.back.front = self.head.front
+        self.head = self.head.front
+        node.front = None
+        node.back = None
+        self.N -= 1
+        return node
+
     def insert(self, data, index):
         if index < 0 or index > self.N:
             print ("Bad index!")

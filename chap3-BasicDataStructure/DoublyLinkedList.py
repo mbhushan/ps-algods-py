@@ -38,13 +38,15 @@ class DoublyLinkedList:
         else:
             count = 0
             curr = self.head
-            while (count < index):
+            while (count < index-1):
                 curr = curr.front
                 count += 1
             node.back = curr
             node.front = curr.front
             curr.front.back = node
             curr.front = node
+            if index == 0:
+                self.head = node
         self.N += 1
         return True
 

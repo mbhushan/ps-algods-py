@@ -31,7 +31,7 @@ def getItem(ht):
     if value:
         print ("%s: %s" % (key, value))
     else:
-        print ("No value found corresponding to key: %s" % key)
+        print ("No value found for key: %s" % key)
 
 
 def setItem(ht):

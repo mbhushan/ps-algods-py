@@ -62,6 +62,26 @@ class BinaryTree:
             return (sizebt(node.left) + 1 + sizebt(node.right))
         return sizebt(self.root)
 
+    def preorder(self):
+        def preorderBT(node):
+            if node is None:
+                return
+            print (node.data, sep=" ", end=" ")
+            preorderBT(node.left)
+            preorderBT(node.right)
+        preorderBT(self.root)
+        print ()
+
+    def postorder(self):
+        def postorderBT(node):
+            if node is None:
+                return
+            postorderBT(node.left)
+            postorderBT(node.right)
+            print (node.data, sep=" ", end=" ")
+        postorderBT(self.root)
+        print ()
+
     def inorder(self):
         def inorderBST(node):
             if node is None:

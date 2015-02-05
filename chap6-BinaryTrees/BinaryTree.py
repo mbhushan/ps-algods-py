@@ -14,7 +14,6 @@ class BinaryTree:
         self.N = 0
 
     def insert(self, data):
-
         def insertBST(node, data):
             if node is None:
                 return Node(data)
@@ -25,6 +24,25 @@ class BinaryTree:
             return node
 
         self.root = insertBST(self.root, data)
+
+    def maxdepth(self):
+        def maxdepthBT(node):
+            if node is None:
+                return 0
+            left = maxdepthBT(node.left)
+            right = maxdepthBT(node.right)
+            if left > right:
+                return left + 1
+            else:
+                return right + 1
+        return maxdepthBT(self.root)
+
+    def size(self):
+        def sizebt(node):
+            if node is None:
+                return 0
+            return (sizebt(node.left) + 1 + sizebt(node.right))
+        return sizebt(self.root)
 
     def inorder(self):
         def inorderBST(node):
@@ -39,6 +57,3 @@ class BinaryTree:
 
     def isempty(self):
         return self.N == 0
-
-    def size(self):
-        return self.N

@@ -19,6 +19,8 @@ def main():
     bt.inorder()
     print ("Binary Tree Size: ", bt.size())
     print ("Max Depth: ", bt.maxdepth())
+    print ("Min value in BST: ", bt.minvalue())
+    print ("Max value in BST: ", bt.maxvalue())
 
 
 if __name__ == '__main__':

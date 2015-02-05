@@ -25,6 +25,24 @@ class BinaryTree:
 
         self.root = insertBST(self.root, data)
 
+    def minvalue(self):
+        def minvalbst(node):
+            if node is None:
+                return None
+            while node.left is not None:
+                node = node.left
+            return node.data
+        return minvalbst(self.root)
+
+    def maxvalue(self):
+        def maxvalbst(node):
+            if node is None:
+                return None
+            while node.right is not None:
+                node = node.right
+            return node.data
+        return maxvalbst(self.root)
+
     def maxdepth(self):
         def maxdepthBT(node):
             if node is None:

@@ -13,6 +13,15 @@ class BinaryTree:
         self.root = None
         self.N = 0
 
+    def haspathsum(self, targetsum):
+        def haspathsumBT(node, targetsum):
+            if node is None:
+                return targetsum == 0
+            # lets check both subtress
+            return haspathsumBT(node.left, targetsum - node.data) or \
+                haspathsumBT(node.right, targetsum - node.data)
+        return haspathsumBT(self.root, targetsum)
+
     def insert(self, data):
         def insertBST(node, data):
             if node is None:

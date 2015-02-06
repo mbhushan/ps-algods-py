@@ -6,7 +6,7 @@ def main():
     bt = BinaryTree()
     dataSet = set([])
     # values = ['F', 'B', 'A', 'D', 'C', 'E', 'G', 'I', 'H']
-    values = [25, 15, 40, 10, 20, 30, 50, 18, 22, 27, 45, 60]
+    values = [25, 15, 40, 10, 20, 30, 50, 18, 22, 27, 45, 60, 42, 47, 49]
     for r in range(random.randint(7, 12)):
         n = random.randint(1, 100)
         dataSet.add(n)
@@ -33,6 +33,9 @@ def main():
     for target in targetsums:
         ans = bt.haspathsum(target)
         print ("Sum: %d in binary tree: %s" % (target, ans))
+
+    print ("print all the root to leaf paths in binary tree")
+    bt.printpaths()
 
 
 if __name__ == '__main__':

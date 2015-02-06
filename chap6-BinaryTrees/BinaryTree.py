@@ -13,7 +13,38 @@ class BinaryTree:
         self.root = None
         self.N = 0
 
+    def printpaths(self):
+        """Given a binary tree, print out all of its root-to-leaf
+        paths, one per line."""
+        def printpathsBT(node):
+            path = [None] * 1000
+            printpathsrecur(node, path, 0)
+
+        def printpathsrecur(node, path, pathlen):
+            if node is None:
+                return
+
+            path[pathlen] = node.data
+            pathlen = pathlen + 1
+
+            # if its a leaf then print the path which led to here
+            if (node.left is None) and (node.right is None):
+                printList(path, pathlen)
+            else:
+                printpathsrecur(node.left, path, pathlen)
+                printpathsrecur(node.right, path, pathlen)
+
+        def printList(path, pathlen):
+            for p in range(pathlen):
+                print (path[p], sep=" ", end= " ")
+            print ()
+        printpathsBT(self.root)
+
+
     def haspathsum(self, targetsum):
+        """ Given a tree and a sum, return true if there is a path from the root
+        down to a leaf, such that adding up all the values along the path
+        equals the given sum."""
         def haspathsumBT(node, targetsum):
             if node is None:
                 return targetsum == 0

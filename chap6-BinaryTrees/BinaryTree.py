@@ -16,6 +16,19 @@ class BinaryTree:
     def getrootnode(self):
         return self.root
 
+    def counttrees(self, numkeys):
+        """ For the key values 1...numKeys, how many structurally unique
+        binary search trees are possible that store those keys. """
+        if numkeys <= 1:
+            return 1
+
+        total = 0
+        for root in range(1, numkeys+1):
+            left = self.counttrees(root - 1)
+            right = self.counttrees(numkeys - root)
+            total += left * right
+        return total
+
     def sametree(self, bintree):
         """ Given two trees, return true if they are
         structurally identical. """

@@ -68,7 +68,9 @@ def main():
     comp = bt1.sametree(bt2)
     print ("Are the trees same: ", comp)
 
-
+    for i in range(1,13):
+        tot = bt.counttrees(i)
+        print ("%d nodes: %d unique BSTs" % (i, tot))
 
 
 if __name__ == '__main__':

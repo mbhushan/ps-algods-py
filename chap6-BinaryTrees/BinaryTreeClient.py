@@ -36,6 +36,24 @@ def main():
 
     print ("print all the root to leaf paths in binary tree")
     bt.printpaths()
+    print ("Mirroring the binary tree: ")
+    bt.mirror()
+    bt.inorder()
+
+    bt = BinaryTree()
+    values = [2, 3, 1]
+    print ("Inserting into Binary Tree: ")
+    # for data in dataSet:
+    for data in values:
+        bt.insert(data)
+        print (data, sep=" ", end=" ")
+    print ()
+    bt.inorder()
+    print ("After doing double tree: ")
+    bt.doubletree()
+    bt.inorder()
+
+
 
 
 if __name__ == '__main__':

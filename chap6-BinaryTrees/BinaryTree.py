@@ -13,6 +13,36 @@ class BinaryTree:
         self.root = None
         self.N = 0
 
+    def doubletree(self):
+        """ For each node in a binary search tree,
+        create a new duplicate node, and insert
+        the duplicate as the left child of the original node.
+        The resulting tree should still be a binary search tree."""
+        def doubletreeBT(node):
+            if node is None:
+                return
+            doubletreeBT(node.left)
+            doubletreeBT(node.right)
+            # duplicate node to left
+            oldleft = node.left
+            node.left = Node(node.data)
+            node.left.left = oldleft
+        doubletreeBT(self.root)
+
+    def mirror(self):
+        """ Change a tree so that the roles of the
+        left and right pointers are swapped at every node."""
+        def mirrorBT(node):
+            if node is None:
+                return
+            mirrorBT(node.left)
+            mirrorBT(node.right)
+            # swap the pointers here
+            temp = node.left
+            node.left = node.right
+            node.right = temp
+        mirrorBT(self.root)
+
     def printpaths(self):
         """Given a binary tree, print out all of its root-to-leaf
         paths, one per line."""

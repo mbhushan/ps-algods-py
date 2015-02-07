@@ -13,6 +13,26 @@ class BinaryTree:
         self.root = None
         self.N = 0
 
+    def getrootnode(self):
+        return self.root
+
+    def sametree(self, bintree):
+        """ Given two trees, return true if they are
+        structurally identical. """
+        def sametreeBT(anode, bnode):
+            # both empty -> return true
+            if anode is None and bnode is None:
+                return True
+            # both non-empty compare them
+            elif anode is not None and bnode is not None:
+                return (anode.data == bnode.data and \
+                        sametreeBT(anode.left, bnode.left) and \
+                        sametreeBT(anode.right, bnode.right))
+            else:
+                # one node None other not -> return false
+                return False
+        return sametreeBT(self.root, bintree.getrootnode())
+
     def doubletree(self):
         """ For each node in a binary search tree,
         create a new duplicate node, and insert

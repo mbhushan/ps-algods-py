@@ -53,6 +53,21 @@ def main():
     bt.doubletree()
     bt.inorder()
 
+    bt1 = BinaryTree()
+    bt2 = BinaryTree()
+    values = ['F', 'B', 'A', 'D', 'C', 'E', 'G', 'I', 'H']
+    print ("Inserting into Binary Tree: ")
+    # for data in dataSet:
+    for data in values:
+        bt1.insert(data)
+        bt2.insert(data)
+        print (data, sep=" ", end=" ")
+    print ()
+    bt1.inorder()
+    bt2.inorder()
+    comp = bt1.sametree(bt2)
+    print ("Are the trees same: ", comp)
+
 
 
 

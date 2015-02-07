@@ -55,7 +55,8 @@ def main():
 
     bt1 = BinaryTree()
     bt2 = BinaryTree()
-    values = ['F', 'B', 'A', 'D', 'C', 'E', 'G', 'I', 'H']
+    # values = ['F', 'B', 'A', 'D', 'C', 'E', 'G', 'I', 'H']
+    values = [25, 15, 40, 10, 20, 30, 50, 18, 22, 27, 45, 60, 42, 47, 49]
     print ("Inserting into Binary Tree: ")
     # for data in dataSet:
     for data in values:
@@ -67,6 +68,22 @@ def main():
     bt2.inorder()
     comp = bt1.sametree(bt2)
     print ("Are the trees same: ", comp)
+    print ("is bt1 BST: ", bt1.isbst1())
+    print ("is bt2 BST: ", bt2.isbst1())
+    bt2.mirror()
+    print ("is bt2 BST after mirroring: ", bt2.isbst1())
+
+    bt1 = BinaryTree()
+    bt2 = BinaryTree()
+    for data in values:
+        bt1.insert(data)
+        bt2.insert(data)
+        print (data, sep=" ", end=" ")
+    print ()
+    print ("is bt1 BST (efficient version): ", bt1.isbst2())
+    print ("is bt2 BST (efficient version): ", bt2.isbst2())
+    bt2.mirror()
+    print ("is bt2 BST after mirroring(efficient version): ", bt2.isbst2())
 
     for i in range(1,13):
         tot = bt.counttrees(i)

@@ -1,3 +1,5 @@
+import sys
+
 
 class Node:
 
@@ -15,6 +17,34 @@ class BinaryTree:
 
     def getrootnode(self):
         return self.root
+
+    def isbst2(self):
+        """ Returns true if the given tree is a binary search tree
+        (efficient version). """
+        def isbst_util(node, mini, maxi):
+            if node is None:
+                return True
+            if node.data < mini or node.data > maxi:
+                return False
+            return ( isbst_util(node.left, mini, node.data) and \
+                    isbst_util(node.right, node.data+1, maxi))
+
+        return isbst_util(self.root, -(sys.maxsize), sys.maxsize)
+
+
+    def isbst1(self):
+        def isbst1_n2(node):
+            if node is None:
+                return True
+            if node.left is not None and self.minvalue(node.left) > node.data:
+                return False
+            if node.right is not None and \
+                    self.maxvalue(node.right) <= node.data:
+                return False
+            if not isbst1_n2(node.left) or not isbst1_n2(node.right):
+                return False
+            return True
+        return isbst1_n2(self.root)
 
     def counttrees(self, numkeys):
         """ For the key values 1...numKeys, how many structurally unique
@@ -128,23 +158,29 @@ class BinaryTree:
 
         self.root = insertBST(self.root, data)
 
-    def minvalue(self):
+    def minvalue(self, root=None):
         def minvalbst(node):
             if node is None:
                 return None
             while node.left is not None:
                 node = node.left
             return node.data
-        return minvalbst(self.root)
 
-    def maxvalue(self):
+        if root is None:
+            root = self.root
+        return minvalbst(root)
+
+    def maxvalue(self, root=None):
         def maxvalbst(node):
             if node is None:
                 return None
             while node.right is not None:
                 node = node.right
             return node.data
-        return maxvalbst(self.root)
+
+        if root is None:
+            root = self.root
+        return maxvalbst(root)
 
     def maxdepth(self):
         def maxdepthBT(node):
